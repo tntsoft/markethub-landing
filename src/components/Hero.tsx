@@ -6,17 +6,17 @@ const Hero = () => {
     const {t} = useTranslation();
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/85">
+        <section className="relative flex items-center justify-center min-h-screen overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/85">
             {/* Background decoration */}
             <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
-            <div className="container mx-auto px-4 z-10">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="container mt-10 lg:mt-0 mx-auto px-4 z-10 flex flex-col justify-center items-center">
+                <div className="grid lg:grid-cols-2 gap-12 items-center lg:w-full">
                     {/* Content */}
-                    <div className="text-center lg:text-left space-y-8 animate-fade-in">
-                        <div className="space-y-4">
+                    <div className="text-center lg:text-left space-y-8 animate-fade-in flex flex-col items-center lg:items-start w-full">
+                        <div className="space-y-4 lg:w-full">
                             {/* Logo */}
                             <div className="flex justify-center lg:justify-start mb-6">
                                 <img
@@ -29,38 +29,46 @@ const Hero = () => {
                             <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent leading-tight">
                                 {t("Markethub")}
                             </h1>
-                            <p className="text-xl lg:text-2xl text-muted-foreground max-w-lg">
+                            <p className="text-xl lg:text-2xl text-muted-foreground max-w-sm lg:max-w-lg mx-auto lg:mx-0">
                                 {t("Markethub automatically searches marketplaces and notifies you of new ads that match your watchlist")}
                             </p>
                         </div>
 
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <Button
-                                size="lg"
-                                className="px-0 py-0 h-auto bg-transparent shadow-none hover:shadow-none hover:scale-105"
-                                asChild
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start lg:w-full">
+                            <a
+                                href="https://apps.apple.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="focus:outline-none"
                             >
-                                <a href="#" className="block">
+                                <Button
+                                    size="lg"
+                                    className="px-0 py-0 h-auto bg-transparent shadow-none hover:shadow-none hover:scale-105 focus:ring-0 focus:outline-none"
+                                >
                                     <img
                                         src="/images/appstore.png"
                                         alt={t("Download for iPhone")}
                                         className="h-14 w-auto"
                                     />
-                                </a>
-                            </Button>
-                            <Button
-                                size="lg"
-                                className="px-0 py-0 h-auto bg-transparent shadow-none hover:shadow-none hover:scale-105"
-                                asChild
+                                </Button>
+                            </a>
+                            <a
+                                href="https://play.google.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="focus:outline-none"
                             >
-                                <a href="#" className="block">
+                                <Button
+                                    size="lg"
+                                    className="px-0 py-0 h-auto bg-transparent shadow-none hover:shadow-none hover:scale-105 focus:ring-0 focus:outline-none"
+                                >
                                     <img
                                         src="/images/googleplay.png"
                                         alt={t("Download for Android")}
                                         className="h-14 w-auto"
                                     />
-                                </a>
-                            </Button>
+                                </Button>
+                            </a>
                         </div>
 
                         <div className="flex items-center gap-8 justify-center lg:justify-start text-sm text-muted-foreground">
