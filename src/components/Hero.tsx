@@ -36,7 +36,7 @@ const Hero = () => {
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start lg:w-full">
                             <a
-                                href="https://apps.apple.com/"
+                                href="https://apps.apple.com/app/id6745069070"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="focus:outline-none"
