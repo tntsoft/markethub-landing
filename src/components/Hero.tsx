@@ -53,7 +53,7 @@ const Hero = () => {
                                 </Button>
                             </a>
                             <a
-                                href="https://play.google.com/"
+                                href="https://play.google.com/store/apps/details?id=com.markethub.gen"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="focus:outline-none"
