@@ -23,8 +23,8 @@ const DownloadSection = () => {
                       {/*<span className="text-muted-foreground">• {t("50k+ Downloads")}</span>*/}
                     </div>
                     
-                    <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-                      {t("Ready to Transform Your Shopping?")}
+                    <h2 className="text-4xl font-bold leading-tight">
+                      {t("Ready to start?")}
                     </h2>
                     
                     <p className="text-xl text-muted-foreground">
