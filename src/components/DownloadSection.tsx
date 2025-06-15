@@ -19,8 +19,8 @@ const DownloadSection = () => {
                   <div className="space-y-6">
                     <div className="flex items-center gap-2 text-sm font-medium text-primary">
                       <Star className="h-4 w-4 fill-current" />
-                      <span>{t("4.8/5 Rating")}</span>
-                      <span className="text-muted-foreground">• {t("50k+ Downloads")}</span>
+                      <span>{t("5/5 Rating")}</span>
+                      {/*<span className="text-muted-foreground">• {t("50k+ Downloads")}</span>*/}
                     </div>
                     
                     <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
@@ -28,52 +28,60 @@ const DownloadSection = () => {
                     </h2>
                     
                     <p className="text-xl text-muted-foreground">
-                      {t("Join thousands of satisfied users who have already discovered the power of Markethub. Download now and start your journey.")}
+                      {t("Join thousands of satisfied users, download now and start your journey.")}
                     </p>
                   </div>
                   
-                  <div className="space-y-4">
-                    <Button 
-                      size="lg" 
-                      className="w-full group bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground py-0 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl h-auto"
-                      asChild
-                    >
-                      <a href="#" className="block py-3">
-                        <img 
-                          src="/lovable-uploads/63314bc0-c1fe-44da-9116-152caedf91b7.png" 
-                          alt={t("Download for iPhone")}
-                          className="h-12 w-auto mx-auto"
-                        />
+                  <div className="space-y-4 justify-center">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start lg:w-full">
+                      <a
+                          href="https://apps.apple.com/app/id6745069070"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="focus:outline-none"
+                      >
+                        <Button
+                            size="lg"
+                            className="px-0 py-0 h-auto bg-transparent shadow-none hover:shadow-none hover:scale-105 focus:ring-0 focus:outline-none"
+                        >
+                          <img
+                              src="/images/appstore.png"
+                              alt={t("Download for iPhone")}
+                              className="h-14 w-auto"
+                          />
+                        </Button>
                       </a>
-                    </Button>
-                    
-                    <Button 
-                      size="lg" 
-                      variant="outline" 
-                      className="w-full group border-2 border-primary/20 hover:border-primary/40 py-0 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:bg-primary/5 h-auto"
-                      asChild
-                    >
-                      <a href="#" className="block py-3">
-                        <img 
-                          src="/lovable-uploads/d4baac3f-5b80-493e-abd3-d65cabf16734.png" 
-                          alt={t("Download for Android")}
-                          className="h-12 w-auto mx-auto"
-                        />
+                      <a
+                          href="https://play.google.com/store/apps/details?id=com.markethub.gen"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="focus:outline-none"
+                      >
+                        <Button
+                            size="lg"
+                            className="px-0 py-0 h-auto bg-transparent shadow-none hover:shadow-none hover:scale-105 focus:ring-0 focus:outline-none"
+                        >
+                          <img
+                              src="/images/googleplay.png"
+                              alt={t("Download for Android")}
+                              className="h-14 w-auto"
+                          />
+                        </Button>
                       </a>
-                    </Button>
+                    </div>
                   </div>
                   
-                  <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground pt-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                      <span>{t("Free forever")}</span>
+                  <div className="flex flex-col sm:flex-row justify-start gap-6 text-sm text-muted-foreground">
+                    <div className="flex whitespace-pre-wrap items-center gap-2">
+                      <div className="w-3 aspect-square bg-green-500 rounded-full inline-block"></div>
+                      <span>{t("Free")}</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <div className="flex whitespace-nowrap items-center gap-2">
+                      <div className="w-3 aspect-square bg-blue-500 rounded-full inline-block"></div>
                       <span>{t("No ads")}</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <div className="flex whitespace-nowrap items-center gap-2">
+                      <div className="w-3 aspect-square bg-purple-500 rounded-full inline-block"></div>
                       <span>{t("Regular updates")}</span>
                     </div>
                   </div>
@@ -83,27 +91,18 @@ const DownloadSection = () => {
                 <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center p-12 lg:p-16">
                   <div className="relative">
                     {/* Main phone */}
-                    <div className="w-64 h-[480px] bg-gradient-to-b from-gray-900 to-gray-700 rounded-[2.5rem] p-2 shadow-2xl">
-                      <div className="w-full h-full bg-gradient-to-br from-background to-muted/20 rounded-[2rem] relative overflow-hidden">
-                        <div className="absolute inset-4 space-y-4">
-                          <div className="h-12 bg-gradient-to-r from-primary/20 to-accent/20 rounded-xl flex items-center justify-center">
-                            <Smartphone className="h-6 w-6 text-primary" />
-                          </div>
-                          <div className="grid grid-cols-2 gap-2">
-                            {[...Array(6)].map((_, i) => (
-                              <div 
-                                key={i} 
-                                className="h-16 bg-gradient-to-br from-muted/10 to-muted/5 rounded-lg"
-                                style={{ animationDelay: `${i * 100}ms` }}
-                              ></div>
-                            ))}
-                          </div>
-                          <div className="space-y-2">
-                            <div className="h-3 bg-muted/20 rounded w-full"></div>
-                            <div className="h-3 bg-muted/20 rounded w-3/4"></div>
-                            <div className="h-3 bg-muted/20 rounded w-1/2"></div>
-                          </div>
+                    <div
+                        className="w-64 sm:w-80 h-[500px] sm:h-[600px] bg-gradient-to-b from-gray-900 to-gray-700 rounded-[3rem] p-2 shadow-2xl transform transition-transform duration-500 mb-8">
+                      <div
+                          className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 rounded-[2.5rem] flex items-center justify-center relative overflow-hidden">
+                        <div className="absolute inset-4 bg-background/95 rounded-[2rem] backdrop-blur-sm flex items-center justify-center">
+                          <img
+                              src="/images/watchlist-creation.png"
+                              alt="Screenshot of the Markethub app feed"
+                              className="w-full h-full object-cover rounded-[1.5rem]"
+                          />
                         </div>
+                        <Smartphone className="absolute bottom-4 right-4 h-8 w-8 text-primary/30"/>
                       </div>
                     </div>
                     

@@ -71,10 +71,18 @@ const Hero = () => {
                             </a>
                         </div>
 
-                        <div className="flex items-center gap-8 justify-center lg:justify-start text-sm text-muted-foreground">
-                            <div className="flex items-center gap-2">
-                                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                                <span>{t("Free to download")}</span>
+                        <div className="flex justify-start gap-6 text-sm text-muted-foreground">
+                            <div className="flex whitespace-pre-wrap items-center gap-2">
+                                <div className="w-3 aspect-square bg-green-500 rounded-full inline-block"></div>
+                                <span>{t("Free")}</span>
+                            </div>
+                            <div className="flex whitespace-nowrap items-center gap-2">
+                                <div className="w-3 aspect-square bg-blue-500 rounded-full inline-block"></div>
+                                <span>{t("No ads")}</span>
+                            </div>
+                            <div className="flex whitespace-nowrap items-center gap-2">
+                                <div className="w-3 aspect-square bg-purple-500 rounded-full inline-block"></div>
+                                <span>{t("Regular updates")}</span>
                             </div>
                         </div>
                     </div>
