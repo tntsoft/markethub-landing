@@ -74,9 +74,14 @@
   "basic filtering for now — more advanced filters are coming soon": "filtrare de bază momentan — filtre avansate vor fi disponibile în curând",
   "advanced filtering options with granular control": "opțiuni avansate de filtrare cu control detaliat",
   "Search automation": "Automatizarea căutării",
-  "automatic alerts and smart watchlists that work in the background": "alerte automate și liste de urmărire inteligente care funcționează în fundal",
-  "manual search, users must return regularly to check": "căutare manuală, utilizatorii trebuie să revină constant pentru a verifica",
+  "searches only based on your watchlist, it does not collect all public listings it finds": "căutările se fac doar pe baza listelor de urmărire, Markethub nu colectează toate anunțurile publice de pe internet",
+  "collects all the data it can find on the web": "colectează toate datele pe care le poate găsi pe internet",
+  "Privacy": "Confidențialitate",
+  "does not collect nor store user information from public listings": "nu colectează și nici nu stochează informații despre utilizatori din anunțurile publice",
+  "collects all private user data including phone numbers": "colectează toate datele private ale utilizatorilor, inclusiv numerele de telefon",
   "Frequently Asked Questions": "Întrebări Frecvente",
   "Find answers to common questions about Markethub and how it can help you find the best deals.": "Găsește răspunsuri la întrebările frecvente despre Markethub și cum te poate ajuta să găsești cele mai bune oferte.",
-  "Ready to start?": "Gata să începi?"
+  "Ready to start?": "Gata să începi?",
+  "Can I use Markethub without an account?": "Pot folosi Markethub fără cont?",
+  "You can see a preview of collected listings without an account, but to create watchlists and receive notifications, you need to sign up.": "Poți vedea o previzualizare a anunțurilor colectate fără să ai cont, dar pentru a crea liste de urmărire și a primi notificări, trebuie să te înregistrezi."
 }

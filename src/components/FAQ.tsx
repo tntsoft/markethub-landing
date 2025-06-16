@@ -28,6 +28,10 @@ const FAQ = () => {
             answer: t("Yes, Markethub is FREE to download and use.")
         },
         {
+            question: t("Can I use Markethub without an account?"),
+            answer: t("You can see a preview of collected listings without an account, but to create watchlists and receive notifications, you need to sign up.")
+        },
+        {
             question: t("Which platforms is it available on?"),
             answer: t("Markethub is available for iPhone and Android.")
         },
@@ -88,8 +92,13 @@ const FAQ = () => {
                                 </TableRow>
                                 <TableRow>
                                     <TableCell className="font-medium">{t("Search automation")}</TableCell>
-                                    <TableCell className="bg-green-50">{t("automatic alerts and smart watchlists that work in the background")}</TableCell>
-                                    <TableCell>{t("manual search, users must return regularly to check")}</TableCell>
+                                    <TableCell className="bg-green-50">{t("searches only based on your watchlist, it does not collect all public listings it finds")}</TableCell>
+                                    <TableCell>{t("collects all the data it can find on the web")}</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell className="font-medium">{t("Privacy")}</TableCell>
+                                    <TableCell className="bg-green-50">{t("does not collect nor store user information from public listings")}</TableCell>
+                                    <TableCell>{t("collects all private user data including phone numbers")}</TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>
