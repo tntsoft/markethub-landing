@@ -25,7 +25,7 @@ const FAQ = () => {
         },
         {
             question: t("Is it free?"),
-            answer: t("Yes, Markethub is FREE to download and use. Premium features are planned for future, but there will forever be a FREE tier, and special gifts for early adopters.")
+            answer: t("Yes, Markethub is FREE to download and use.")
         },
         {
             question: t("Which platforms is it available on?"),
