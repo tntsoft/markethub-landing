@@ -29,7 +29,7 @@ const FAQ = () => {
         },
         {
             question: t("Can I use Markethub without an account?"),
-            answer: t("You can see a preview of collected listings without an account, but to create watchlists and receive notifications, you need to sign up.")
+            answer: t("You can see a preview of existing listings without an account, but to create watchlists and receive notifications, you need to sign up.")
         },
         {
             question: t("Which platforms is it available on?"),
