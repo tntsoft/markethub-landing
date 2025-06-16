@@ -1,9 +1,17 @@
 
-import { Smartphone, Mail, MapPin } from "lucide-react";
+import { Facebook, X, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
+
+  const socialLinks = [
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61577384487528', label: 'Facebook' },
+    { icon: X, href: 'https://x.com/MarkethubRO', label: 'X' },
+    // { icon: Instagram, href: '#', label: 'Instagram' },
+    // { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    // { icon: Youtube, href: '#', label: 'YouTube' }
+  ];
 
   return (
     <footer className="bg-gradient-to-t from-primary/5 to-background border-t border-border/50">
@@ -24,6 +32,23 @@ const Footer = () => {
             <p className="text-muted-foreground max-w-md leading-relaxed">
               {t("Your ultimate marketplace companion. Discover amazing deals right from your phone.")}
             </p>
+
+            {/* Social Links */}
+            <div className="flex space-x-4">
+              {socialLinks.map((social, index) => {
+                const IconComponent = social.icon;
+                return (
+                    <a
+                        key={index}
+                        href={social.href}
+                        className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-300 transition-colors duration-200"
+                        aria-label={social.label}
+                    >
+                      <IconComponent className="w-5 h-5" />
+                    </a>
+                );
+              })}
+            </div>
             {/*<div className="flex gap-4">*/}
             {/*  <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors cursor-pointer">*/}
             {/*    <span className="text-xs font-bold text-primary">f</span>*/}

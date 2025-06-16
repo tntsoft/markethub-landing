@@ -1,5 +1,5 @@
 
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import {
     Accordion,
     AccordionContent,
@@ -42,6 +42,19 @@ const FAQ = () => {
         {
             question: t("Can I sell products through the app?"),
             answer: t("No. Markethub is designed to help you find listings that are already present on the web.")
+        },
+        {
+            question: t("I found an issue. What should I do?"),
+            answer: (
+                <Trans
+                    i18nKey="Please contact us on <twitter>X (@MarkethubRO)</twitter>, <facebook>Markethub Facebook</facebook>, or write us at <email>contact@markethub.ro</email>."
+                    components={{
+                        twitter: <a href="https://x.com/MarkethubRO" className="text-blue-500 hover:underline" />,
+                        facebook: <a href="https://www.facebook.com/profile.php?id=61577384487528" className="text-blue-500 hover:underline" />,
+                        email: <a href="mailto:contact@markethub.ro" className="text-blue-500 hover:underline" />
+                    }}
+                />
+            )
         },
         {
             question: t("What's the difference between Markethub and Imoradar24?"),
