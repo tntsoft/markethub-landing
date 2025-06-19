@@ -70,20 +70,7 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-primary" />
                 <span>contact@markethub.ro</span>
               </div>
-
-              <div className="flex items-center gap-3">
-                <Link className="h-4 w-4"/>
-                <a href="/privacy-policy.txt">
-                  {t('Privacy Policy')}
-                </a>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <Link className="h-4 w-4"/>
-                <a href="/terms-and-conditions.txt">
-                  {t('Terms & Conditions')}
-                </a>
-              </div>
+              
               {/*<div className="flex items-center gap-3">*/}
               {/*  <MapPin className="h-4 w-4 text-primary" />*/}
               {/*  <span>Ramnicu Valcea, Judet Valcea</span>*/}
