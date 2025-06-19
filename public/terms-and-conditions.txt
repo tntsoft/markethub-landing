@@ -1,0 +1,40 @@
+Terms and Conditions for Markethub
+Effective Date: 9 June 2025
+
+By accessing or using Markethub, you agree to be bound by these Terms and Conditions. If you do not agree, do not use our services.
+
+1. Use of Service
+Markethub is a platform that aggregates public listings.
+
+2. Account Registration
+To access certain features, you must create an account. You agree to provide accurate and complete information and to update it as necessary.
+
+3. User Conduct
+You agree not to:
+
+use the platform for illegal or unauthorized purposes
+
+attempt to scrape, crawl, or reverse engineer any part of the platform
+
+interfere with or disrupt the service or servers
+
+4. Listings and Content
+Markethub displays listings collected from external sources. We do not guarantee the accuracy, completeness, or legality of any listings.
+
+5. Termination
+We may suspend or terminate your account if you violate these terms or if we believe your conduct harms our service or other users.
+
+6. Disclaimer of Warranties
+We strive to keep Markethub available and functioning properly, but the service is provided "as is" and "as available". We do not guarantee uninterrupted access or that the platform will always be error-free.
+
+7. Limitation of Liability
+To the maximum extent permitted by law, Markethub shall not be liable for any indirect, incidental, or consequential damages arising from your use of the service.
+
+8. Changes to Terms
+We may update these terms. Continued use of the service after changes means you accept the revised terms.
+
+9. Governing Law
+These terms are governed by the laws of Romania. Any disputes will be resolved in the competent courts of Romania.
+
+10. Contact
+For any questions about these terms, contact us at: contact@markethub.ro

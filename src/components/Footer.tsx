@@ -1,5 +1,5 @@
 
-import { Facebook, X, Mail } from "lucide-react";
+import { Facebook, X, Mail, Link } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -69,6 +69,44 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-primary" />
                 <span>contact@markethub.ro</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Link className="h-4 w-4"/>
+                <a href="/privacy-policy.txt">
+                  {t('Privacy Policy')}
+                </a>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Link className="h-4 w-4"/>
+                <a href="/terms-and-conditions.txt">
+                  {t('Terms & Conditions')}
+                </a>
+              </div>
+              {/*<div className="flex items-center gap-3">*/}
+              {/*  <MapPin className="h-4 w-4 text-primary" />*/}
+              {/*  <span>Ramnicu Valcea, Judet Valcea</span>*/}
+              {/*</div>*/}
+            </div>
+          </div>
+
+          {/* Others */}
+          <div className="space-y-6">
+            <h4 className="text-lg font-semibold">{t("Others")}</h4>
+            <div className="space-y-3 text-muted-foreground">
+              <div className="flex items-center gap-3">
+                <Link className="h-4 w-4"/>
+                <a href="/privacy-policy.txt">
+                  {t('Privacy Policy')}
+                </a>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Link className="h-4 w-4"/>
+                <a href="/terms-and-conditions.txt">
+                  {t('Terms & Conditions')}
+                </a>
               </div>
               {/*<div className="flex items-center gap-3">*/}
               {/*  <MapPin className="h-4 w-4 text-primary" />*/}
